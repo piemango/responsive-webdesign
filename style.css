@@ -1,0 +1,97 @@
+@font-face {
+    font-family: Mali;
+    src: url('font/Mali-Regular.ttf');;
+}
+@font-face {
+    font-family: Mali-se;
+    src: url('font/Mali-SemiBold.ttf');;
+}
+@font-face {
+    font-family: Noto;
+    src: url('font/NotoSansThaiLooped-Regular.ttf');;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/**********************ข้อ 1****************************/
+.first{
+    width: 100vw; height: 100vh;
+    background-color: green;
+    color: yellow;
+    padding: 1rem;
+}
+@media screen and (max-width: 980px){
+    .first{
+       background-color: blue;
+       color: white;
+    }
+}
+@media screen and (max-width: 600px){
+    .first{
+        width: 100vw;
+       background-color: black;
+       color: white;
+    }
+}
+
+
+/**********************ข้อ 2****************************/
+.second{
+    width: 100vw; height: 100vh;
+    font-family: Mali-se;
+    color: blueviolet;
+    display: grid;
+    grid-template-rows: 0fr 0fr 0fr 0fr;
+    row-gap: 2rem;
+    padding: 1rem;
+}
+.squre{
+    background-color: blue;
+    padding: 4rem 3rem;
+    position: relative;
+}
+.squre p{
+    font-size: calc(400%);
+    position: relative;
+    color: white;
+}
+
+@media (min-width: 780px) and (max-width: 999px) {
+    
+    .second{
+        color: orangered;
+    }
+    .squre{
+        background-color: rgb(255, 31, 248);
+    }
+    .squre p{
+        font-size: calc(100%);
+    }
+    
+}
+
+@media (max-width: 699px) {
+    
+    .second{
+        font-family: Noto;
+        color: blue;
+
+    }
+    .squre{
+        background-color: green;
+
+    }
+    .squre p{
+        font-size: calc(100%);
+        color: yellow;
+    }
+    
+}
